@@ -24,7 +24,7 @@ jobs:
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     
     - name: Authh
-      run: C:\Users\Public\Desktop\data\ngrok.exe tcp 3389
+      run: C:\Users\Public\Desktop\data\ngrok.exe tcp 22
 
       
       
