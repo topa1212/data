@@ -15,7 +15,7 @@ jobs:
       run: Expand-Archive data.zip
 
     - name: Auth
-      run: .\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
+      run: cmd /c .\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
     - name: SET TIME
       run: cmd /c .\data\exit.bat
