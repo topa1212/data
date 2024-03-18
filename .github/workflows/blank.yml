@@ -21,7 +21,7 @@ jobs:
       run: cmd /c C:\Users\Public\Desktop\data\exit.bat
       
     - name: Enable
-    - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
+      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     
     - name: Authh
       run: C:\Users\Public\Desktop\data\ngrok.exe tcp 3389
