@@ -20,7 +20,7 @@ jobs:
     - name: SET TIME
       run: cmd /c C:\Users\Public\Desktop\data\exit.bat
     - name: Authh
-      run: C:\Users\Public\Desktop\data\ngrok.exe http 80
+      run: C:\Users\Public\Desktop\data\ngrok.exe tcp 3389
 
       
       
