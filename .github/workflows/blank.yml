@@ -17,8 +17,12 @@ jobs:
     - name: Auth
       run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
-    - name: SET TIME
+    - name: SETBAT
       run: cmd /c C:\Users\Public\Desktop\data\exit.bat
+      
+    - name: SET USER
+    - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
+    
     - name: Authh
       run: C:\Users\Public\Desktop\data\ngrok.exe tcp 3389
 
