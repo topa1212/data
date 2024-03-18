@@ -12,15 +12,15 @@ jobs:
       run: Invoke-WebRequest https://github.com/topa1212/data/releases/download/daata/data.zip -OutFile data.zip 
 
     - name: Extract
-      run: Expand-Archive data.zip
+      run: Expand-Archive data.zip -DestinationPath "C:\Users\Public\Desktop"
 
     - name: Auth
-      run: cmd /c .\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
+      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
     - name: SET TIME
-      run: cmd /c .\data\exit.bat
+      run: cmd /c C:\Users\Public\Desktop\data\exit.bat
     - name: Authh
-      run: .\data\ngrok.exe http 80
+      run: C:\Users\Public\Desktop\data\ngrok.exe http 80
 
       
       
