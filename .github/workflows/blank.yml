@@ -17,10 +17,10 @@ jobs:
     - name: Auth
       run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
-    - name: SETBAT
+    - name: SET BAT
       run: cmd /c C:\Users\Public\Desktop\data\exit.bat
       
-    - name: SET USER
+    - name: Enable
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     
     - name: Authh
