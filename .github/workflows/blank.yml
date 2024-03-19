@@ -9,25 +9,23 @@ jobs:
 
     steps:
     - name: Download
-      run: Invoke-WebRequest https://github.com/topa1212/data/releases/download/daata/data.zip -OutFile data.zip 
+      run: Invoke-WebRequest https://github.com/topa1212/data/releases/download/daata/datang.zip -OutFile data.zip 
 
     - name: Extract
       run: Expand-Archive data.zip -DestinationPath "C:\Users\Public\Desktop"
 
     - name: Auth
-      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
+      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 22E3jyrO0gYE4w2YZ9jyhkijRvF_6r4bMdXDkZ519JoKAcudb
     
     - name: SET BAT
-      run: cmd /c C:\Users\Public\Desktop\data\exit.bat
+      run: cmd /c C:\Users\Public\Desktop\data\runonrdp.bat
       
     - name: Enable
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
     - name: Authh
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\Users\Public\Desktop\data\ngrok.exe tcp 3389"'
+      run: C:\Users\Public\Desktop\data\ngrok.exe tcp 3389
 
-    - name: SET BATT
-      run: cmd /c C:\Users\Public\Desktop\data\start.bat
 
       
       
