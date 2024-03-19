@@ -15,10 +15,10 @@ jobs:
       run: Expand-Archive data.zip -DestinationPath "C:\Users\Public\Desktop"
 
     - name: Auth
-      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
+      run: cmd /c C:\Users\Public\Desktop\datang\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
     - name: SET BAT
-      run: cmd /c C:\Users\Public\Desktop\data\runonrdp.bat
+      run: cmd /c C:\Users\Public\Desktop\datang\runonrdp.bat
       
     - name: Enable
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
