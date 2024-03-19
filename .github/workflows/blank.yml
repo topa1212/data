@@ -26,8 +26,7 @@ jobs:
     - name: IP SETUP
       run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389"'
     
-    - name: IP
-      run: cmd /c C:\Users\Public\Desktop\datang\ip.bat
+
         
     - name: RUN
       run: C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389
