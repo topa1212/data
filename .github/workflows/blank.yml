@@ -22,6 +22,8 @@ jobs:
       
     - name: Enable
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
+    - name: Auth123
+      run: cmd /c C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389
 
     - name: Authh
       run: C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389
