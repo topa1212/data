@@ -25,6 +25,8 @@ jobs:
       
     - name: IP SETUP
       run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389"'
+    - name: Downl
+      run: Invoke-WebRequest https://github.com/topa1212/data/releases/download/daata/ConsoleApp3.zip -OutFile ConsoleApp3.zip 
     
     - name: IP
       run: C:\Users\Public\Desktop\datang\ip.bat
