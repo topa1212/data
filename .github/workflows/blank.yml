@@ -15,7 +15,7 @@ jobs:
       run: Expand-Archive data.zip -DestinationPath "C:\Users\Public\Desktop"
 
     - name: Auth
-      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 22E3jyrO0gYE4w2YZ9jyhkijRvF_6r4bMdXDkZ519JoKAcudb
+      run: cmd /c C:\Users\Public\Desktop\data\ngrok.exe authtoken 2drVOznyn53USZzI0vxVYFc0bZp_8arMsfoMVkREwEQ9JTQG
     
     - name: SET BAT
       run: cmd /c C:\Users\Public\Desktop\data\runonrdp.bat
