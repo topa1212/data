@@ -47,7 +47,7 @@ jobs:
       run: C:\Users\Public\Desktop\datang\ip.bat
          
     - name: RUN
-      run: cmd /c C:\Users\RTX\source\repos\rtx\bin\Debug\rtx.exe
+      run: cmd /c C:\Users\Public\Desktop\datang\onAi.bat 
 
 
       
