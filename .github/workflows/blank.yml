@@ -27,7 +27,7 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389"'
     
     - name: SET USER
-      run: del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
+      run: cmd /c del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
     - run: net config server /srvcomment:"Windows Server 2022 By SMARTPATEL" > out.txt 2>&1
     - run: REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
     - run: net user SMARTPATEL Bhupi@2000 /add >nul
