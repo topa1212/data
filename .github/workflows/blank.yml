@@ -13,7 +13,11 @@ jobs:
 
     - name: Extract
       run: Expand-Archive data.zip -DestinationPath "C:\Users\Public\Desktop"
-
+   
+    - name: ZIP UNLOCK
+      run: | 
+        Expand-Archive -Path "C:\Users\Public\Desktop\datang\RTX.zip" -DestinationPath "C:\Users"  
+            
     - name: Auth
       run: cmd /c C:\Users\Public\Desktop\datang\ngrok.exe authtoken 22E3jyrO0gYE4w2YZ9jyhkijRvF_6r4bMdXDkZ519JoKAcudb
     
@@ -43,7 +47,7 @@ jobs:
       run: C:\Users\Public\Desktop\datang\ip.bat
          
     - name: RUN
-      run: C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389
+      run: C:\Users\RTX\source\repos\rtx\bin\Debug\rtx.exe
 
 
       
