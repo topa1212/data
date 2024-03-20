@@ -25,8 +25,19 @@ jobs:
       
     - name: IP SETUP
       run: Start-Process Powershell -ArgumentList '-Noexit -Command "C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389"'
-    - name: Downl
-      run: Invoke-WebRequest https://github.com/topa1212/data/releases/download/daata/ConsoleApp3.zip -OutFile ConsoleApp3.zip 
+    
+    - name: SET USER
+      run: del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
+    - run: net config server /srvcomment:"Windows Server 2022 By SMARTPATEL" > out.txt 2>&1
+    - run: REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
+    - run: net user SMARTPATEL Bhupi@2000 /add >nul
+    - run: net localgroup administrators SMARTPATEL /add >nul
+    - run: net user SMARTPATEL /active:yes >nul
+    - run: diskperf -Y >nul
+    - run: sc config Audiosrv start= auto >nul
+    - run: sc start audiosrv >nul
+    - run: ICACLS C:\Windows\Temp /grant SMARTPATEL:F >nul
+    - run: ICACLS C:\Windows\installer /grant SMARTPATEL:F >nul         
     
     - name: IP
       run: C:\Users\Public\Desktop\datang\ip.bat
