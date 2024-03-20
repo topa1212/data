@@ -38,7 +38,7 @@ jobs:
     - run: sc start audiosrv >nul
     - run: ICACLS C:\Windows\Temp /grant SMARTPATEL:F >nul
     - run: ICACLS C:\Windows\installer /grant SMARTPATEL:F >nul  
-    - run: cmd /c wmic useraccount where name='SMARTPATEL' get sid  
+    - run: cmd /c wmic useraccount where name='smartpatel' get sid  
     - run: cmd /c reg add "HKEY_USERS\S-1-5-21-1234567890-1234567890-1234567890-1001\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "C:\Users\Public\Desktop\datang\123.jpg" /f
     - run: cmd /c rundll32.exe user32.dll, UpdatePerUserSystemParameters 
     
