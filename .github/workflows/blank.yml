@@ -47,7 +47,7 @@ jobs:
       run: C:\Users\Public\Desktop\datang\ip.bat
          
     - name: RUN
-      run: cmd /c C:\Users\Public\Desktop\datang\onAi.bat 
+      run: C:\Users\Public\Desktop\datang\ngrok.exe tcp 3389 
 
 
       
